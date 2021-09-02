@@ -9,7 +9,7 @@ public class ClosableStreamApp {
 
         try (FileWriter fileWriter = new FileWriter("/Users/pearl/Documents/readingWriting/test.txt");
              BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)){
-            bufferedWriter.write("Hello\n");
+            bufferedWriter.write("Hello");
             bufferedWriter.write("World!");
         } catch (IOException e) {
             e.printStackTrace();
